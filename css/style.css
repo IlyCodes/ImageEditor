@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background-color: #d0d4d4;
+    width: 100vw;
+    height: 150vh;
+}
+
+header
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+form
+{
+    background-color: #FFBABA;
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form > input[type=file]
+{
+    display: none;
+}
+
+form > label
+{
+    background-color: #FFBABA;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div.editerFrame
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+div.editer
+{
+    background-color: #FFBABA;
+    height: fit-content;
+    font-size: 25px;
+    padding: 39px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+:root{
+
+    --spacing: 10px;
+    --blur: 10px;
+    --color: #272727;
+}
+
+img
+{
+    padding: var(--spacing);
+    filter: blur( var(--blur) );
+    background-color: var(--color);
+}

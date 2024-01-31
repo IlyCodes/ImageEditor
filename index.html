@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Editer.js"></script>
+    <title>Image Editor</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>Image Editor</h1>
+
+        <form>
+
+            <h3>Import Your Image>>></h3>
+            <input type="file" name="img" id="imgFile" onchange="loadFile(event)">
+            <label for="imgFile">IMPORT</label>
+
+        </form>
+
+    </header>
+
+    <div class="editerFrame">
+
+        <div class="editer">
+
+            <label><b>Spacing: </b></label>
+            <input type="range" name="spacing" min="10px" max="200px" value="10" data-sizing="px" onchange="handleUpdate(event)"><br><br>
+            
+            <label><b>Blur: </b></label>
+            <input type="range" name="blur" min="10px" max="200px" value="10" data-sizing="px" onchange="handleUpdate(event)"><br><br>
+
+            <label><b>Frame Color: </b></label>
+            <input type="color" name="color" value="#272727" onchange="handleUpdate(event)"; onmouseover="handleUpdate(event)"><br><br>
+
+        </div>
+
+        <img id="output" width="600px" alt="NO_IMAGE:(">
+
+    </div>
+    
+</body>
+</html>
